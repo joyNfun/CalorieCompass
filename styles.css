@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 50px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    font-size: large;
+}
+
+font {
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+}
+
+.form-calendar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.calendar-container {
+    flex: 1; /* Take available space */
+    text-align: right; /* Align calendar to the right */
+    margin-right: 15px; /* Space between calendar and input fields */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align input fields to the left */
+    flex: 1; /* Take available space */
+}
+
+select, input, button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%; /* Full width for input fields */
+    max-width: 800px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#food-picture-container {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#food-picture {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+#food-tables {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%; /* Full width for tables */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .form-calendar-wrapper {
+        flex-direction: column; /* Stack calendar and input fields vertically */
+        align-items: center; /* Center items on mobile */
+    }
+
+    .calendar-container {
+        text-align: center; /* Center align calendar on mobile */
+        margin: 0; /* Remove margins */
+        width: 100%; /* Full width */
+    }
+
+    .form-picture-wrapper {
+        width: 100%; /* Full width for input fields */
+        align-items: center; /* Center input fields on mobile */
+    }
+}
